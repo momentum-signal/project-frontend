@@ -1,12 +1,17 @@
-import { Button } from "@mui/material";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Layout from "./components/shared/Layout";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <h2 className="text-5xl">Test title</h2>
-      <Button variant="contained">Contained</Button>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
