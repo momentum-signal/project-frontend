@@ -1,15 +1,11 @@
-import { Button } from "@mui/material";
-import "./App.css";
+import MeetingContainer from "./components/home/meetingContainer";
 import Header from "./components/shared/Header";
 
 function App() {
   return (
-    <div className="App">
-      {/* <h2 className="text-5xl">Test title</h2>
-      <Button variant="contained">Contained</Button>
-      <p>Saiket Das</p> */}
-
+    <div>
       <Header></Header>
+      <MeetingContainer></MeetingContainer>
     </div>
   );
 }
