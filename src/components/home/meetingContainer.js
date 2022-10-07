@@ -5,9 +5,9 @@ import AddBoxIcon from "@mui/icons-material/AddBox";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import ScreenShareIcon from "@mui/icons-material/ScreenShare";
 
-export default function meetingContainer() {
+export default function MeetingContainer() {
   return (
-    <Box className="lg:w-1/4 lg:m-28 m-10">
+    <Box className="m-10 md:m-0">
       <div className="grid grid-cols-2 gap-y-10 justify-items-center">
         <div className="text-center">
           <div className="box-border h-24 w-24 lg:h-32 lg:w-32 p-4 bg-orange-400 flex justify-center items-center rounded-3xl">

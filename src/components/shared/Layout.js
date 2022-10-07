@@ -8,9 +8,7 @@ function Layout({ children }) {
       <Sidebar />
       <div>
         <Header />
-        <main className="mt-16 md:mt-24 md:h-[calc(100vh-6rem)]">
-          {children}
-        </main>
+        <main className="md:h-[calc(100vh-6rem)]">{children}</main>
       </div>
     </div>
   );
