@@ -7,8 +7,8 @@ import ScreenShareIcon from "@mui/icons-material/ScreenShare";
 
 export default function MeetingContainer() {
   return (
-    <Box className="m-10 md:m-0">
-      <div className="grid grid-cols-2 gap-y-10 justify-items-center">
+    <Box className="m-10 md:m-0 flex justify-center">
+      <div className="grid grid-cols-2 gap-x-10 md:gap-x-0 gap-y-10 justify-items-center md:w-4/6">
         <div className="text-center">
           <div className="box-border h-24 w-24 lg:h-32 lg:w-32 p-4 bg-orange-400 flex justify-center items-center rounded-3xl">
             <VideocamIcon sx={{ fontSize: 64, color: "white" }} />
