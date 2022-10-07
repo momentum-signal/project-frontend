@@ -1,17 +1,17 @@
-import { Button } from "@mui/material";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Calender from "./components/Calender";
-import LiveTime from "./components/LiveTime";
-import Header from "./shared/Header";
+import Layout from "./components/shared/Layout";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      <LiveTime></LiveTime>
-      <Calender></Calender>
-
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
