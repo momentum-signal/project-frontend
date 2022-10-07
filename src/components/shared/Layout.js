@@ -6,7 +6,7 @@ function Layout({ children }) {
   return (
     <div className="md:flex">
       <Sidebar />
-      <div>
+      <div className="w-full">
         <Header />
         <main className="md:h-[calc(100vh-6rem)]">{children}</main>
       </div>

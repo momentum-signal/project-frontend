@@ -1,7 +1,7 @@
 import React from "react";
-import Calendar from "../components/home/Calendar";
 import MeetingContainer from "../components/home/MeetingContainer";
-import Time from "../components/home/Time";
+import LiveTime from "../components/home/LiveTime";
+import CalendarArea from "../components/home/Calendar";
 
 function HomePage() {
   return (
@@ -11,8 +11,8 @@ function HomePage() {
       </div>
       {/* time and calendar */}
       <div className="md:w-3/6">
-        <Time />
-        <Calendar />
+        <LiveTime />
+        <CalendarArea />
       </div>
     </div>
   );
