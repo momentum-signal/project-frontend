@@ -1,12 +1,17 @@
-import MeetingContainer from "./components/home/meetingContainer";
-import Header from "./components/shared/Header";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./App.css";
+import Layout from "./components/shared/Layout";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div>
-      <Header></Header>
-      <MeetingContainer></MeetingContainer>
-    </div>
+    <BrowserRouter>
+      <Layout>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+        </Routes>
+      </Layout>
+    </BrowserRouter>
   );
 }
 
